@@ -1,13 +1,11 @@
 ༼ ºل͟º༼ ºل͟º ༽ºل͟º ༽ºل͟º ༽
 
-Corrupted cops
-Gangs
-Crypto
+Corrupted cops  
+Gangs  
+Crypto  
+Devcon3  
 
-Devcon3
-
-
-Rise of Crypto Gangs.
+Rise of Crypto Gangs
 
 Feel free to add your own team by creating a pull request or posting a picture on twitter with #cryptogang hashtag.
 
