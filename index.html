@@ -2,17 +2,11 @@
 <html>
 <head>
     <title>CryptoGangs</title>
-    <style type="text/css">
-        img {
-            width: 80%;
-            margin: 0 auto;
-            display: block;
-        }
-    </style>
+     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-    <linkexchange-link
-    size="leaderboard"
+    <linkexchange-link style="position:fixed; bottom:30px; right:30px; z-index:999;" 
+    size="rectangle"
     type="text"
     recipient-address="0xCdF8957f213b6Cad32b1C975126Ee506237b711d" 
     whitelist="0xCdF8957f213b6Cad32b1C975126Ee506237b711d"
@@ -25,11 +19,32 @@
     algorithm="links"
   >
   </linkexchange-link>
-  <script src="https://cdn.jsdelivr.net/npm/@linkexchange/widgets@stable"></script>
-    
-   
-    <h2>Userfeeds CryptoGang</h2>
-    <img src="images/userfeeds/gang.jpeg"/>
-    <h3>Add you gang by making PR to <a href="https://github.com/Userfeeds/cryptogangs">https://github.com/Userfeeds/cryptogangs</a></h3>
+  <script src="https://cdn.jsdelivr.net/npm/@linkexchange/widgets@latest"></script>
+  <div class="wrapper">
+    <div class="header">
+        <a href="https://linkexchange.io" class="crypto logo">Powered<br/>by LinkExchange</a>
+        <a href="https://github.com/Userfeeds/cryptogangs" class="crypto button">List your gang</a>
+    </div>
+    <div class="introduction">
+        <img style="max-width:370px;" src="images/logo.svg"/>
+        <p class="crypto" style="color:#CDD4E1;">Visiting Devcon3 in Cancun</p>
+    </div>
+    <div class="feed">
+        <div class="container">
+          <h3 class="title">Text fadeIn bottom</h3>
+          <div class="content">
+            <a href="https://userfeeds.io" target="_blank">
+              <img class="content-image" src="images/userfeeds/gang.jpeg">
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">Userfeeds</h3>
+                <p class="crypto content-text">userfeeds.io</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    </div>
+  </div>
 </body>
 </html>
+
+

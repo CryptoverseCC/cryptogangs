@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Black Future'; /*a name to be used later*/
+    src: url('fonts/BlackFuture.ttf'); /*URL to font*/
+}
+
+body {
+    background-color:#0F141E;
+    font-family:'PT Sans', Helvetica, Arial;
+}
+
+.wrapper {
+    max-width:1080px;
+    margin:0 auto;
+}
+
+.header {
+    margin-top:2em;
+}
+
+.introduction {
+    text-align:center;
+    margin:6em 0;
+}
+
+
+a {
+    font-size:14px;
+    text-decoration:none;
+    cursor: pointer; 
+    font-style: italic;
+    color:white;
+    font-weight:bold;
+
+}
+
+a.button {
+    font-weight:bold;
+    background-color:white;
+    color:#0F141E;
+    padding:0.6em 1.2em;
+    float:right;
+    font-style: italic;
+}
+
+p.crypto {
+    font-weight:bold;
+    font-style: italic;
+    font-size:14px;
+    color:white;
+}
+
+
+
+.content {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+  transition: filter .2s ease-in-out;
+  -webkit-filter: grayscale(0%) contrast(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%) contrast(100%); /* FF 35+ */
+}
+
+.content:hover .content-image{
+  -webkit-filter: grayscale(100%) contrast(120%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%) contrast(120%); /* FF 35+ */
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  font-size:6em;
+  font-family:'Black Future';
+  margin-bottom: 0.5em;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 1em;
+  margin-top:-2em;
+}
+
+.fadeIn-bottom{
+  top: 55%;
+}
