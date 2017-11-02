@@ -33,7 +33,7 @@ function createGang(gang) {
   element$.innerHTML = `
     <div class="content">
       <a href="${gang.url}" target="_blank">
-        <img class="content-image" src="${gang.url}">
+        <img class="content-image" src="${gang.mediaUrl}">
           <div class="content-details fadeIn-bottom">
             <h3 class="content-title">${gang.userName}</h3>
             <p class="crypto content-text">${gang.text}</p>
