@@ -21,7 +21,14 @@ function run() {
   database.ref('/gangs').once('value').then((snapshot) => {
     const gangs = Object.values(snapshot.val());
 
-    gangs.forEach((gang) => {
+    gangs
+      .sort((g0, g1) => {
+        const d0 = new Date(g0.createdAt);
+        const d1 = new Date(g1.createdAt);
+
+        return d0.getTime() - d1.getTime();
+      })
+      .forEach((gang) => {
       const gang$ = createGang(gang);
       document.querySelector('.feed').prepend(gang$);
     });
